@@ -31,3 +31,14 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+.showError {
+  visibility: visible;
+  color: darken(red, 10%);
+  font-size: 1.1rem;
+}
+
+.hideError {
+  font-size: 1.1rem;
+  visibility: hidden;
+}

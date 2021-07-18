@@ -28,19 +28,28 @@
           <h3 class="main__bill-title">Bill</h3>
           <div class="main__bill">
             <img class="main__dollar-image" src="/images/icon-dollar.svg" alt="Dollar" />
-            <input class="main__bill-input" type="number" placeholder="0" required />
+            <input
+              id="bill-input"
+              class="main__bill-input"
+              type="number"
+              placeholder="0"
+              required
+            />
           </div>
+          <p id="msg-bill" class="hideError">
+            The bill input is required and cannot be less than 1.
+          </p>
         </div>
 
         <div class="main__tip-container">
           <h3 class="main__tip-title">Select Tip %</h3>
           <div class="main__tip-percentages-container">
-            <button class="main__tip-btn">5%</button>
-            <button class="main__tip-btn">10%</button>
-            <button class="main__tip-btn">15%</button>
-            <button class="main__tip-btn">25%</button>
-            <button class="main__tip-btn">50%</button>
-            <input class="main__tip-custom" type="number" placeholder="Custom" />
+            <button class="main__tip-btn btn">5%</button>
+            <button class="main__tip-btn btn">10%</button>
+            <button class="main__tip-btn btn">15%</button>
+            <button class="main__tip-btn btn">25%</button>
+            <button class="main__tip-btn btn">50%</button>
+            <input id="custom-input" class="main__tip-custom" type="number" placeholder="Custom" />
           </div>
         </div>
 
@@ -48,8 +57,17 @@
           <h3 class="main__people-title">Number of People</h3>
           <div class="main__people">
             <img class="main__people-image" src="/images/icon-person.svg" alt="Person" />
-            <input class="main__people-input" type="number" placeholder="0" required />
+            <input
+              id="people-input"
+              class="main__people-input"
+              type="number"
+              placeholder="0"
+              required
+            />
           </div>
+          <p id="msg-people" class="hideError">
+            The number of people input is required and cannot be less than 1.
+          </p>
         </div>
 
         <div class="main__total">
@@ -58,16 +76,16 @@
               <h3 class="main__total-title">Tip Amount</h3>
               <p class="main__total-subtitle">/ person</p>
             </div>
-            <p class="main__amount">0.00€</p>
+            <p id="tip-amount" class="main__amount">0.00€</p>
           </div>
           <div class="main__total-container">
             <div>
               <h3 class="main__total-title">Total</h3>
               <p class="main__total-subtitle">/ person</p>
             </div>
-            <p class="main__amount">0.00€</p>
+            <p id="total-amount" class="main__amount">0.00€</p>
           </div>
-          <button class="main__total-btn">Reset</button>
+          <button id="reset-btn" class="main__total-btn">Reset</button>
         </div>
       </div>
     </main>
