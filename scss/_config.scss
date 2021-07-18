@@ -1,0 +1,54 @@
+// Colors
+$primary-color: hsl(172, 67%, 45%);
+$very-dark: hsl(183, 100%, 15%);
+
+$lighter-dark-gray: hsl(184, 14%, 56%);
+$dark-gray: hsl(186, 14%, 43%);
+
+$lighter-light-gray: hsl(189, 41%, 97%);
+$light-gray: hsl(185, 41%, 84%);
+
+$white: hsl(0, 0%, 100%);
+
+// Font Weight
+$font-400: 400;
+$font-700: 700;
+
+// Mixins
+
+@mixin transition {
+  transition: all 200ms ease-in-out;
+}
+
+@mixin font-config {
+  font-family: inherit;
+  font-size: 2.2rem;
+  font-weight: $font-700;
+}
+
+@mixin border-radius {
+  border-radius: 4px;
+}
+
+@mixin border($color) {
+  border: 2px solid #{$color};
+}
+
+@mixin container-bottom-space {
+  margin-bottom: 2rem;
+}
+
+@mixin input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+@mixin input-config($text) {
+  width: 100%;
+  color: $very-dark;
+  text-align: #{$text};
+  border: none;
+}

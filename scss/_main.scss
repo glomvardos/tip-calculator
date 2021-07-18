@@ -3,51 +3,107 @@
   border-radius: 2.5rem;
 
   &__card {
-    padding: 2rem;
+    padding: 3rem;
 
     .main__bill-title,
-    .main__tip-title {
+    .main__tip-title,
+    .main__people-title {
       color: $dark-gray;
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
+
     .main__bill-container {
-      margin-bottom: 2rem;
+      @include container-bottom-space;
 
       .main__bill {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.4rem 1rem;
-        cursor: pointer;
-        border-radius: 6px;
-        border: 2px solid transparent;
+        @include input-container;
+        @include border(transparent);
+        @include border-radius;
+        @include transition;
 
         &:hover {
-          border: 2px solid $primary-color;
+          @include border($primary-color);
         }
 
         .main__bill-input {
-          width: 100%;
-          color: $very-dark;
-          font-family: inherit;
-          font-size: 2rem;
-          font-weight: $font-700;
-          text-align: right;
-          border: none;
+          @include input-config(right);
+          @include font-config;
 
           &::placeholder {
             color: $lighter-dark-gray;
           }
 
-          &::-webkit-outer-spin-button,
-          &::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .main__tip-container {
+      @include container-bottom-space;
+
+      .main__tip-percentages-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+
+        .main__tip-btn {
+          padding: 0.8rem 0;
+          color: $white;
+          background-color: $very-dark;
+          border: none;
+          cursor: pointer;
+          @include font-config;
+          @include border-radius;
+          @include transition;
+
+          &:hover {
+            color: $very-dark;
+            background-color: $primary-color;
+          }
+        }
+        .main__tip-custom {
+          @include input-config(center);
+          @include border(transparent);
+          @include border-radius;
+          @include font-config;
+          @include transition;
+
+          &:hover {
+            @include border($primary-color);
+          }
+          &::placeholder {
+            color: $dark-gray;
           }
 
-          &[type='number'] {
-            -moz-appearance: textfield;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .main__people-container {
+      @include container-bottom-space;
+
+      .main__people {
+        @include input-container;
+        @include border(transparent);
+        @include border-radius;
+        @include transition;
+
+        &:hover {
+          @include border($primary-color);
+        }
+
+        .main__people-input {
+          @include input-config(right);
+          @include font-config;
+
+          &::placeholder {
+            color: $lighter-dark-gray;
           }
 
           &:focus {
