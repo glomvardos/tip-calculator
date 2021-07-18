@@ -17,7 +17,7 @@
       @include container-bottom-space;
 
       .main__bill {
-        @include input-container;
+        @include flex-input-container;
         @include border(transparent);
         @include border-radius;
         @include transition;
@@ -89,7 +89,7 @@
       @include container-bottom-space;
 
       .main__people {
-        @include input-container;
+        @include flex-input-container;
         @include border(transparent);
         @include border-radius;
         @include transition;
