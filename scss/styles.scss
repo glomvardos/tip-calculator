@@ -1,6 +1,7 @@
 @import 'config';
 @import 'header';
 @import 'main';
+@import 'footer';
 
 * {
   margin: 0;
@@ -15,6 +16,8 @@ html {
 body {
   font-family: 'Space Mono', monospace;
   background-color: $light-gray;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 /* Chrome, Safari, Edge, Opera */

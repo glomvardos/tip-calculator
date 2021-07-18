@@ -61,7 +61,7 @@
 
           &:hover {
             color: $very-dark;
-            background-color: $primary-color;
+            background-color: darken($light-gray, 10%);
           }
         }
         .main__tip-custom {
@@ -109,6 +109,55 @@
           &:focus {
             outline: none;
           }
+        }
+      }
+    }
+
+    .main__total {
+      background-color: $very-dark;
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+
+      .main__total-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        .main__total-title {
+          color: $white;
+          font-size: 1.5rem;
+          margin-bottom: 0.2rem;
+        }
+
+        .main__total-subtitle {
+          font-size: 1.3rem;
+          font-weight: $font-700;
+          color: $lighter-dark-gray;
+        }
+
+        .main__amount {
+          color: $primary-color;
+          font-size: 3rem;
+        }
+      }
+
+      .main__total-btn {
+        display: block;
+        width: 100%;
+        background-color: $primary-color;
+        color: $very-dark;
+        padding: 1rem 0;
+        margin-top: 3.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        @include font-config;
+        @include border-radius;
+        @include transition;
+
+        &:hover {
+          background-color: darken($light-gray, 10%);
         }
       }
     }
