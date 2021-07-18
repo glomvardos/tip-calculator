@@ -13,18 +13,39 @@
     />
 
     <link rel="stylesheet" href="/css/styles.min.css" />
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>Tip calculator app</title>
 
     <script defer src="index.js"></script>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / person Total / person
-    Reset
+    <header class="header">
+      <h1 class="header__title"><span>spli</span> <span>tter</span></h1>
+    </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main class="main">
+      <div class="main__card">
+        <div class="main__bill-container">
+          <h3 class="main__bill-title">Bill</h3>
+          <div class="main__bill">
+            <img class="main__dollar-image" src="/images/icon-dollar.svg" alt="Dollar" />
+            <input class="main__bill-input" type="number" placeholder="0" required />
+          </div>
+        </div>
+
+        <div class="main__tip-container">
+          <h3 class="main__tip-title">Select Tip %</h3>
+          <div class="main__tip-percentages-container">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>Custom</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>Coded by <a href="#">glomvardos</a></footer>
   </body>
 </html>
