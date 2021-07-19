@@ -159,6 +159,11 @@
         &:hover {
           background-color: darken($light-gray, 10%);
         }
+
+        &:disabled {
+          cursor: not-allowed;
+          background-color: lighten($very-dark, 10%);
+        }
       }
     }
   }

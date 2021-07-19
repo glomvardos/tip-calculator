@@ -23,22 +23,14 @@
     </header>
 
     <main class="main">
-      <div class="main__card">
+      <form class="main__card">
         <div class="main__bill-container">
           <h3 class="main__bill-title">Bill</h3>
           <div class="main__bill">
             <img class="main__dollar-image" src="/images/icon-dollar.svg" alt="Dollar" />
-            <input
-              id="bill-input"
-              class="main__bill-input"
-              type="number"
-              placeholder="0"
-              required
-            />
+            <input id="bill-input" class="main__bill-input" type="number" placeholder="0" />
           </div>
-          <p id="msg-bill" class="hideError">
-            The bill input is required and cannot be less than 1.
-          </p>
+          <p id="msg-bill" class="hideError">Bill input cannot be empty and less than 1.</p>
         </div>
 
         <div class="main__tip-container">
@@ -57,16 +49,10 @@
           <h3 class="main__people-title">Number of People</h3>
           <div class="main__people">
             <img class="main__people-image" src="/images/icon-person.svg" alt="Person" />
-            <input
-              id="people-input"
-              class="main__people-input"
-              type="number"
-              placeholder="0"
-              required
-            />
+            <input id="people-input" class="main__people-input" type="number" placeholder="0" />
           </div>
           <p id="msg-people" class="hideError">
-            The number of people input is required and cannot be less than 1.
+            Number of people input cannot be empty and less than 1.
           </p>
         </div>
 
@@ -85,9 +71,9 @@
             </div>
             <p id="total-amount" class="main__amount">0.00€</p>
           </div>
-          <button id="reset-btn" class="main__total-btn">Reset</button>
+          <button id="reset-btn" class="main__total-btn" disabled="true">Reset</button>
         </div>
-      </div>
+      </form>
     </main>
 
     <footer class="footer">

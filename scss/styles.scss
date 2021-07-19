@@ -42,3 +42,14 @@ input[type='number'] {
   font-size: 1.1rem;
   visibility: hidden;
 }
+
+.active {
+  background-color: $primary-color;
+  color: $very-dark;
+  padding: 0.8rem 0;
+  border: none;
+  cursor: pointer;
+  @include font-config;
+  @include border-radius;
+  @include transition;
+}
