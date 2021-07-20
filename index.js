@@ -115,6 +115,7 @@ const customCalculationHandler = event => {
 
   if (event.key === 'Enter' && isValid) {
     event.preventDefault()
+
     reset.removeAttribute('disabled')
     buttonClassHandler()
 
