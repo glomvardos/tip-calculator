@@ -53,3 +53,5 @@ input[type='number'] {
   @include border-radius;
   @include transition;
 }
+
+@import 'responsive';

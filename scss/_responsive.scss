@@ -1,0 +1,47 @@
+@media (min-width: 814px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    margin: 7rem 0;
+  }
+  .main {
+    max-width: 914px;
+    &__card {
+      display: flex;
+
+      .main__flex-left-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 3rem;
+
+        .main__tip-percentages-container {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .main__people-container {
+          margin-bottom: 0;
+        }
+      }
+
+      .main__total {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 4rem;
+
+        .main__total-btn {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+}

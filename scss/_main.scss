@@ -1,6 +1,8 @@
 .main {
   background-color: $white;
   border-radius: 2.5rem;
+  max-width: 500px;
+  margin: 0 auto;
 
   &__card {
     padding: 3rem;
