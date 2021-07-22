@@ -107,6 +107,7 @@ const tipCalculationHandler = event => {
   }
 }
 
+// Custom Calculation Handler
 const customCalculationHandler = event => {
   tipButtons.forEach(btn => btn.removeEventListener('click', tipCalculationHandler, true))
 
@@ -121,9 +122,6 @@ const customCalculationHandler = event => {
 
     getTotalAndTipAmount(totalAmount)
     getTotalAndTipAmount(tipAmount, undefined, true)
-
-    const getTipAmount = +customInput.value / +peopleInput.value
-    tipAmount.textContent = getTipAmount.toFixed(2) + '€'
   }
 }
 
