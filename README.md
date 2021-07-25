@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://tip-calculator-2021.netlify.app/)
-- Live Site URL: [Add live site URL here](https://tip-calculator-2021.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-O6Eq-N3Id](https://tip-calculator-2021.netlify.app/)
+- Live Site URL: [https://tip-calculator-2021.netlify.app/](https://tip-calculator-2021.netlify.app/)
 
 ### Built with
 
