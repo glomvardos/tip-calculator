@@ -1,11 +1,15 @@
-# Frontend Mentor - Tip calculator app solution
+# Tip calculator app
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [The challenge](#the-challenge)
-- [Links](#links)
+- [Tip calculator app](#tip-calculator-app)
+  - [Table of contents](#table-of-contents)
+    - [The challenge](#the-challenge)
+    - [Links](#links)
+    - [Built with](#built-with)
+  - [Author](#author)
 
 - [Built with](#built-with)
 - [Author](#author)
@@ -20,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-O6Eq-N3Id](https://tip-calculator-2021.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-O6Eq-N3Id](https://www.frontendmentor.io/solutions/tip-calculator-app-O6Eq-N3Id)
 - Live Site URL: [https://tip-calculator-2021.netlify.app/](https://tip-calculator-2021.netlify.app/)
 
 ### Built with
