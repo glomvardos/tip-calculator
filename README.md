@@ -4,12 +4,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Table of contents
 
-- [Tip calculator app](#tip-calculator-app)
-  - [Table of contents](#table-of-contents)
-    - [The challenge](#the-challenge)
-    - [Links](#links)
-    - [Built with](#built-with)
-  - [Author](#author)
+- [The challenge](#the-challenge)
+- [Links](#links)
 
 - [Built with](#built-with)
 - [Author](#author)
